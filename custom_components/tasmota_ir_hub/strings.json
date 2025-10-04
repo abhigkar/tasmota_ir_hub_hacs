@@ -1,0 +1,18 @@
+{
+  "title": "Tasmota IR Hub",
+  "step": {
+    "user": {
+      "title": "Configure Tasmota IR Hub",
+      "description": "Enter connection details for your Tasmota IR Hub.",
+      "data": {
+        "host": "Host or IP address",
+        "port": "HTTP port (if using HTTP)",
+        "use_mqtt": "Use MQTT for events and commands",
+        "mqtt_topic": "Base MQTT topic (for MQTT mode)",
+        "http_user": "HTTP username (if required)",
+        "http_pass": "HTTP password (if required)",
+        "scan_interval": "Polling interval in seconds (HTTP mode only)"
+      }
+    }
+  }
+}

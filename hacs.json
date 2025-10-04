@@ -1,0 +1,6 @@
+{
+  "name": "Tasmota IR Hub",
+  "content": "integration",
+  "homeassistant": "2021.6.0",
+  "zip_release": false
+}

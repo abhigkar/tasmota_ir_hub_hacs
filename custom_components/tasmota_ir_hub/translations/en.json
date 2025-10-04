@@ -1,0 +1,17 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "data": {
+          "host": "Host",
+          "port": "Port",
+          "use_mqtt": "Use MQTT",
+          "mqtt_topic": "MQTT Topic",
+          "http_user": "HTTP User",
+          "http_pass": "HTTP Password",
+          "scan_interval": "Scan Interval"
+        }
+      }
+    }
+  }
+}

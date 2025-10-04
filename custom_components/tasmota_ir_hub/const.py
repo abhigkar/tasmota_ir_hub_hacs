@@ -1,0 +1,15 @@
+DOMAIN = "tasmota_ir_hub"
+PLATFORMS = ["sensor", "switch"]
+CONF_USE_MQTT = "use_mqtt"
+CONF_HOST = "host"
+CONF_PORT = "port"
+CONF_HTTP_USER = "http_user"
+CONF_HTTP_PASS = "http_pass"
+CONF_MQTT_TOPIC = "mqtt_topic"
+CONF_SCAN_INTERVAL = "scan_interval"
+DEFAULT_PORT = 80
+DEFAULT_SCAN_INTERVAL = 30
+DATA_COORDINATOR = "coordinator"
+ATTR_RAW = "raw"
+SERVICE_SEND_IR = "send_ir"
+SERVICE_LEARN_IR = "learn_ir"
