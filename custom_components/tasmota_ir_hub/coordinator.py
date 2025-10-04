@@ -23,11 +23,11 @@ class TasmotaIrCoordinator(DataUpdateCoordinator):
             use_mqtt=entry.data.get("use_mqtt", False),
             mqtt_topic=entry.data.get("mqtt_topic"),
         )
+        scan = entry.options.get("scan_interval", DEFAULT_SCAN_INTERVAL)
         super().__init__(
             hass,
             _LOGGER,
             name="Tasmota IR Hub",
-            scan = entry.options.get("scan_interval", DEFAULT_SCAN_INTERVAL),
             update_interval = timedelta(seconds=scan)
         )
         # internal state
