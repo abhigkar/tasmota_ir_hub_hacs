@@ -1,6 +1,7 @@
 from homeassistant.helpers.update_coordinator import DataUpdateCoordinator, UpdateFailed
 from homeassistant.core import HomeAssistant
 from typing import Any
+from datetime import timedelta
 import async_timeout
 import logging
 
@@ -26,7 +27,8 @@ class TasmotaIrCoordinator(DataUpdateCoordinator):
             hass,
             _LOGGER,
             name="Tasmota IR Hub",
-            update_interval=entry.options.get("scan_interval", DEFAULT_SCAN_INTERVAL),
+            scan = entry.options.get("scan_interval", DEFAULT_SCAN_INTERVAL)
+            update_interval = timedelta(seconds=scan)
         )
         # internal state
         self.last_ir: dict[str, Any] = {}
