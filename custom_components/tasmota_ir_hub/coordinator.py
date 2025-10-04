@@ -27,7 +27,7 @@ class TasmotaIrCoordinator(DataUpdateCoordinator):
             hass,
             _LOGGER,
             name="Tasmota IR Hub",
-            scan = entry.options.get("scan_interval", DEFAULT_SCAN_INTERVAL)
+            scan = entry.options.get("scan_interval", DEFAULT_SCAN_INTERVAL),
             update_interval = timedelta(seconds=scan)
         )
         # internal state
